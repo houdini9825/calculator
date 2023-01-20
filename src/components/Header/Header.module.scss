@@ -1,0 +1,41 @@
+@use '../../styles/variables.scss' as v;
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 32rem;
+	height: 4.2rem;
+
+	@include v.large-screen {
+		width: 53.3rem;
+	}
+
+	h1 {
+    font-size: 3.2rem;
+	}
+
+	div {
+		display: flex;
+    align-items: flex-end;
+	}
+
+	p {
+		margin-right: 2.6rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	}
+}
+
+.standard {
+  color: v.$s-color-white;
+}
+
+.light {
+	color: v.$l-color-dark-gray;
+}
+
+.dark {
+  color: v.$d-color-soft-white;
+}

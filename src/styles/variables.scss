@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+
+
+/* Standard theme variables */
+$s-color-gray: #647198;
+$s-color-soft-white: #EAE3DC;
+$s-color-dark-gray: #434A59;
+$s-color-orange: #D03F2F;
+$s-color-black: #181F33;
+$s-color-white: #FFFFFF;
+$s-color-light-black: #242D44;
+$s-color-background: #3A4663;
+$s-color-hover-gray: #A2B2E1;
+$s-color-hover-white: #FFFFFE;
+$s-color-hover-orange: #F96B5B;
+
+/* Light theme variables */
+
+$l-color-soft-white: #E5E4E1;
+$l-color-white: #EEEEEE;
+$l-color-dark-gray: #36362C;
+$l-color-blue: #378187;
+$l-color-light-gray: #D2CDCD;
+$l-color-orange: #C85402;
+$l-color-background: #E6E6E6;
+$l-color-hover-white: #FFFFFF;
+$l-color-hover-blue: #62B5BC;
+$l-color-hover-orange: #FF8A38;
+
+/* Dark theme variables */
+
+$d-color-dark-purple: #331C4D;
+$d-color-soft-white: #FFE53D;
+$d-color-purple: #56077C;
+$d-color-dark-red: #881C9E;
+$d-color-red: #BE15F4;
+$d-color-blue: #00DED0;
+$d-color-black-purple: #1E0936;
+$d-color-light-blue: #6CF9F1;
+$d-color-black: #1A2327;
+$d-color-background: #17062A;
+$d-color-hover-dark-purple: #6C34AC;
+$d-color-hover-purple: #8631AF;
+$d-color-hover-blue: #93FFF8;
+
+
+/* Global variables */
+
+$font-family-primary: 'League Spartan', sans-serif;
+$font-weight-primary: 700;
+$large-screen: 33.75em;
+
+@mixin large-screen {
+  @media (min-width: $large-screen) {
+    @content
+  }
+}

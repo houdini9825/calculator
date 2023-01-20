@@ -1,0 +1,35 @@
+@use '../../styles/variables.scss' as v;
+
+.output {
+  text-align: right;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width: 32.7rem;
+  height: 8.8rem;
+  padding: 2.4rem;
+  border-radius: 1rem;
+  font-size: 4rem;
+
+  @include v.large-screen {
+    width: 54rem;
+    height: 12.8rem;
+    padding: 3.2rem;
+    font-size: 5.6rem;
+  }
+}
+
+.standard {
+  background-color: v.$s-color-black;
+  color: v.$s-color-white;
+}
+
+.light {
+  background-color: v.$l-color-white;
+  color: v.$l-color-dark-gray;
+}
+
+.dark {
+  background-color: v.$d-color-black-purple;
+  color: v.$s-color-soft-white;
+}

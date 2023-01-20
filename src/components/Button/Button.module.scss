@@ -1,0 +1,141 @@
+@use '../../styles/variables.scss' as v;
+
+
+.btn {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    translate: 0 1px;
+  }
+}
+
+.numOpPer {
+  font-size: 3.2rem;
+
+  @include v.large-screen {
+    font-size: 4rem;
+  }
+}
+
+.equals {
+  font-size: 2rem;
+
+  @include v.large-screen {
+    font-size: 2.8rem;
+  }
+}
+
+.remove {
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  @include v.large-screen {
+    font-size: 2.8rem;
+  }
+}
+
+/* Standard Themes */
+
+.standard.numOpPer {
+  background-color: v.$s-color-soft-white;
+  color: v.$s-color-dark-gray;
+
+
+  &:hover {
+    background-color: v.$s-color-hover-white;
+  }
+}
+
+.standard.equals {
+  background-color: v.$s-color-orange;
+  color: v.$s-color-white;
+
+
+  &:hover {
+    background-color: v.$s-color-hover-orange;
+  }
+}
+
+.standard.remove {
+  background-color: v.$s-color-gray;
+  color: v.$s-color-white;
+
+
+  &:hover {
+    background-color: v.$s-color-hover-gray;
+  }
+}
+
+/* Light Themes */
+
+.light.numOpPer {
+  background-color: v.$l-color-soft-white;
+  color: v.$l-color-dark-gray;
+
+
+  &:hover {
+    background-color: v.$l-color-hover-white;
+  }
+}
+
+.light.equals {
+  background-color: v.$l-color-orange;
+  color: v.$l-color-hover-white;
+
+
+  &:hover {
+    background-color: v.$l-color-hover-orange;
+  }
+}
+
+.light.remove {
+  background-color: v.$l-color-blue;
+  color: v.$l-color-hover-white;
+
+
+  &:hover {
+    background-color: v.$l-color-hover-blue;
+  }
+}
+
+/* Dark Themes */
+.dark.numOpPer {
+  background-color: v.$d-color-dark-purple;
+  color: v.$s-color-soft-white;
+
+
+  &:hover {
+    background-color: v.$d-color-hover-dark-purple;
+  }
+}
+
+.dark.equals {
+  background-color: v.$d-color-blue;
+  color: v.$d-color-black;
+
+
+  &:hover {
+    background-color: v.$d-color-hover-blue;
+  }
+}
+
+.dark.remove {
+  background-color: v.$d-color-purple;
+  color: v.$d-color-soft-white;
+
+
+  &:hover {
+    background-color: v.$d-color-hover-purple;
+  }
+}

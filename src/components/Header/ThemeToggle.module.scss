@@ -1,0 +1,113 @@
+@use '../../styles/variables.scss' as v;
+
+.container {
+  width: 7.1rem;
+  height: 4.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.labelContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 1.2rem;
+
+  label {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  border-radius: 1.3rem;
+  padding: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+
+  input {
+    display: none;
+  }
+
+  span {
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+  }
+
+  .active {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+}
+
+.standard {
+
+
+  .labelContainer {
+    color: v.$s-color-white;
+  }
+
+  .inputContainer {
+    background-color: v.$s-color-light-black;
+    justify-content: flex-start;
+
+      .active {
+        background-color: v.$s-color-orange;
+
+        &:hover {
+          background-color: v.$s-color-hover-orange;
+        }
+      }
+  }
+}
+
+.light {
+
+
+  .labelContainer {
+    color: v.$l-color-dark-gray;
+  }
+
+  .inputContainer {
+    background-color: v.$l-color-light-gray;
+    justify-content: center;
+
+      .active {
+        background-color: v.$l-color-orange;
+
+        &:hover {
+          background-color: v.$l-color-hover-orange;
+        }
+      }
+  }
+}
+
+.dark {
+
+
+  .labelContainer {
+    color: v.$d-color-soft-white;
+  }
+
+  .inputContainer {
+    background-color: v.$d-color-black-purple;
+    justify-content: flex-end;
+
+      .active {
+        background-color: v.$d-color-blue;
+
+        &:hover {
+          background-color: v.$d-color-hover-blue;
+        }
+      }
+  }
+}

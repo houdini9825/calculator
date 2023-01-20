@@ -1,0 +1,23 @@
+@use './styles/variables.scss' as v;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font-family: v.$font-family-primary;
+  font-weight: v.$font-weight-primary;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+#root {
+
+}
+

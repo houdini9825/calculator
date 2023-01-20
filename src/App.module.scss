@@ -1,0 +1,30 @@
+@use './styles/variables.scss' as v;
+
+.background {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	min-width: 100vw;
+	background-color: v.$s-color-background;
+}
+
+.output {
+	margin-top: 3.2rem;
+}
+
+.btnsContainer {
+	margin-top: 2.4rem;
+}
+
+.standard {
+	background-color: v.$s-color-background;
+}
+
+.light {
+	background-color: v.$l-color-background;
+}
+
+.dark {
+	background-color: v.$d-color-background;
+}

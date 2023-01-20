@@ -1,0 +1,35 @@
+@use '../../styles/variables.scss' as v;
+
+.container {
+  padding: 2.4rem;
+  width: 32.7rem;
+  height: 42rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.3rem;
+  border-radius: 1rem;
+
+  @include v.large-screen {
+    width: 54rem;
+    height: 48rem;
+    padding: 3.2rem;
+    gap: 2.4rem;
+  }
+
+  .spanTwo {
+    grid-column-start: span 2;
+  }
+}
+
+.standard {
+  background-color: v.$s-color-light-black;
+}
+
+.light {
+  background-color: v.$l-color-light-gray;
+}
+
+.dark {
+  background-color: v.$d-color-black-purple;
+}
