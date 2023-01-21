@@ -25,8 +25,7 @@ class Calculate {
     const result = []
     for (let i=0; i<data.length; i++) {
       if (typeof data[i] === 'string' && data[i].match(/x|\//)) {
-        result.pop()
-        result.push(Calculate.calc(data[i], data[i-1], data[i+1]))
+        result.push(Calculate.calc(data[i], result.pop(), data[i+1]))
         i++
       } else {
         result.push(data[i])
